@@ -49,6 +49,7 @@ body{
 
 .container__botao{
     display: none;
+    border: unset;
 }
 
 .container span{
