@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookFinder</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header class="cabecalho">
+    <div class="container">
+        <input type="checkbox" id="menu" class="container__botao">
+        <label for="menu">
+            <span class="cabecalho__menu-hamburguer container__imagem"></span>
+        </label>
+        <ul class="lista-menu">
+            <li class="lista-menu__titulo">Categorias</li>
+            <li class="lista-menu__item"><a class="lista-menu__link" ref="#">Horror</a></li>
+            <li class="lista-menu__item"><a class="lista-menu__link" ref="#">True Crime</a></li>
+            <li class="lista-menu__item"><a class="lista-menu__link" ref="#">Romance</a></li>
+            <li class="lista-menu__item"><a class="lista-menu__link" ref="#">Suspense</a></li>
+            <li class="lista-menu__item"><a class="lista-menu__link" ref="#">Fantasia</a></li>
+        </ul>
+        <a href="index.html"><img src="img/book.svg" alt="Logo do book finder" class="container__imagem"></a>
+    </div>
+    <div class="container">
+        <a href="#"><img src="img/Favoritos.svg" alt="meus favoritos" class="container__imagem"></a>
+        <a href="#"><img src="img/Compras.svg" alt="carrinho de compras" class="container__imagem"></a>
+        <a href="#"><img src="img/Usuário.svg" alt="meu perfil" class="container__imagem"></a>
+    </div>
+</header>
+<section class="banner">
+    <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+    <p class="banner__texto">Encontre em nossa estante o que precisa para seu entretenimento!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+</section>
+<section class="carrossel">
+    <h2 class="carrossel__titulo">Últimos lançamentos</h2>
+    <div class="swiper">
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img class="slide-img" src="img/billy-summers.jpg" alt="livro de horror"></div>
+          <div class="swiper-slide"><img class="slide-img" src="img/blood-moon.jpg" alt="livro de true crime"></div>
+          <div class="swiper-slide"><img class="slide-img" src="img/book-lovers.jpg" alt="livro de romance"></div>
+          <div class="swiper-slide"><img class="slide-img" src="img/book-ofnight.jpg" alt="livro de fantasia"></div>
+          <div class="swiper-slide"><img class="slide-img" src="img/finn.jpg" alt="livro de horror"></div>
+          <div class="swiper-slide"><img class="slide-img" src="img/reckless-girls.jpg" alt="livro de suspense"></div>
+        </div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+
+    <article class="card">
+        <!-- 1 linha-->
+        <div class="card__descricao">
+            <!--1 coluna-->
+            <div class="descricao">
+                <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
+                <h2 class="descricao__titulo-livro">Misery</h2>
+                <p class="descricao__texto">O escritor Paul Sheldon sofre um acidente de carro e é socorrido pela enfermeira Annie, sua fã "número 1". Porém, Annie não é uma fã normal.</p>
+            </div>
+            <!-- 2 coluna-->
+            <img src="img/misery.jpg" alt="livro de suspense" class="descricao__imagem">
+        </div>
+
+        <!--2 linha -->
+        <div class="card__botoes">
+            <!--1 coluna-->
+            <ul class="botoes">
+                <li class="botoes__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+                <li class="botoes__item"><img src="img/Compras.svg" alt="Adicionar à sacola"></li>
+            </ul>
+            <!--2 coluna-->
+            <a href="#" class="botoes__ancora">Saiba mais</a>
+        </div>
+    </article>
+</section>
+
+<section class="carrossel">
+    <h2 class="carrossel__titulo">Mais vendidos</h2>
+    <div class="swiper">
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img class="slide-img" src="img/gone-inthedark.jpg" alt="livro de horror"></div>
+          <div class="swiper-slide"><img class="slide-img" src="img/houseof-furies.jpg" alt="livro de true crime"></div>
+          <div class="swiper-slide"><img class="slide-img" src="img/nicki pau preto kkkkkk.jpg" alt="livro de romance"></div>
+          <div class="swiper-slide"><img class="slide-img" src="img/senseof-death.jpg" alt="livro de fantasia"></div>
+          <div class="swiper-slide"><img class="slide-img" src="img/spanish-love.jpg" alt="livro de horror"></div>
+          <div class="swiper-slide"><img class="slide-img" src="img/weather-girl.jpg" alt="livro de suspense"></div>
+        </div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+
+    <article class="card">
+        <!-- 1 linha-->
+        <div class="card__descricao">
+            <!--1 coluna-->
+            <div class="descricao">
+                <img src="img/Estrelinhas.svg" alt="avaliação 5 estrelas">
+                <h3 class="descricao__titulo">Autora do mês</h3>
+                <h2 class="descricao__titulo-livro">Rachel Hawkins</h2>
+                <p class="descricao__texto">Autora de livros de romance, Rachel domina as prateleiras das livrarias americanas.</p>
+            </div>
+            <!-- 2 coluna-->
+            <img src="img/rachel.jpg" alt="autora rachel" class="descricao__imagem-autora">
+        </div>
+
+        <!--2 linha -->
+        <div class="card__botoes">
+            <!--1 coluna-->
+            <ul class="botoes">
+                <li class="botoes__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+                <li class="botoes__item"><img src="img/Compras.svg" alt="Adicionar à sacola"></li>
+            </ul>
+            <!--2 coluna-->
+            <a href="#" class="botoes__ancora-autora">Saiba mais</a>
+        </div>
+    </article>
+</section>
+
+<section class="topicos">
+    <h2 class="topicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+    <ul class="topicos__lista">
+        <li class="topicos__item">
+            <a href="#" class="topicos__link">Policial</a>
+        </li>
+        <li class="topicos__item">
+            <a href="#" class="topicos__link">Fantasia</a>
+        </li>
+        <li class="topicos__item">
+            <a href="#" class="topicos__link">Auto-ajuda</a>
+        </li>
+        <li class="topicos__item">
+            <a href="#" class="topicos__link">Biografias</a>
+        </li>
+        <li class="topicos__item">
+            <a href="#" class="topicos__link">Terror</a>
+        </li>
+        <li class="topicos__item">
+            <a href="#" class="topicos__link">Internacionais</a>
+        </li>
+        <li class="topicos__item">
+            <a href="#" class="topicos__link">Drama</a>
+        </li>
+        <li class="topicos__item">
+            <a href="#" class="topicos__link">Suspense</a>
+        </li>
+    </ul>
+</section>
+
+<section class="contato">
+    <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+    <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+</section>
+
+<hr>
+
+<footer class="rodapé">
+    <h2 class="rodapé__titulo">Grupo Alura</h2>
+</footer>
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+    spaceBetween: 10,
+    slidesPerView: 3,
+    pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    bulletClass: `swiper-pagination-bullet`,
+    },
+    });
+</script>
+</body>
+</html>
